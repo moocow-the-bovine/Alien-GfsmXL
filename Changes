@@ -1,0 +1,6 @@
+##-*- Mode: Change-Log; coding: utf-8; -*-
+##
+## Change log for perl distribution Alien::Gfsm
+
+v0.001 Mon, 22 Feb 2016 10:56:08 +0100 moocow
+	+ initial version
