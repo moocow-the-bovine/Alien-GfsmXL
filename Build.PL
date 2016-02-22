@@ -5,6 +5,13 @@ use warnings;
 use Alien::Base::ModuleBuild;
 use Alien::Gfsm;
 
+##-- maybe tweak alien build environment for local ('share') install of Alien::Gfsm
+my %env;
+if (Alien::Gfsm->install_type ne 'system') {
+  my $pcdir = Alien::Gfsm->dist_dir."/lib/pkgconfig";
+  $env{PKG_CONFIG_PATH} = join(":", $pcdir, ($ENV{PKG_CONFIG_PATH} ? $ENV{PKG_CONFIG_PATH} : qw()));
+}
+
 my $builder = Alien::Base::ModuleBuild->new
   (
    module_name => 'Alien::GfsmXL',
@@ -28,10 +35,9 @@ my $builder = Alien::Base::ModuleBuild->new
 			location => '~moocow/mirror/projects/gfsm/',
 			pattern  => qr/^gfsmxl-([\d\.\-]+)\.tar\.gz$/,
 		       },
-   extra_compiler_flags => Alien::Gfsm->cflags,
-   extra_linker_flags   => Alien::Gfsm->libs,
+   alien_env => \%env,
    alien_build_commands => [
-			    '%c --prefix=%s --enable-shared --enable-static',
+			    '%c --prefix=%s --enable-shared --enable-static --disable-doc',
 			    'make',
 			   ],
    alien_isolate_dynamic => 1,
