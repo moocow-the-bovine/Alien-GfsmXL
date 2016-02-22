@@ -1,4 +1,4 @@
-lib/Alien/Gfsm.pm
+lib/Alien/GfsmXL.pm
 
 t/00_use.t
 

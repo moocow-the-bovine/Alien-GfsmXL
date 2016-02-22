@@ -3,11 +3,11 @@ use strict;
 use warnings;
 
 use Test::More tests => 1;
-use Alien::Gfsm;
+use Alien::GfsmXL;
 
 use Text::ParseWords qw/shellwords/;
-my @libs = shellwords( Alien::Gfsm->libs );
+my @libs = shellwords( Alien::GfsmXL->libs );
 
 my ($libname) = grep { s/^-l// } @libs;
-is( $libname, 'gfsm', 'idenitified needed library' );
+is( $libname, 'gfsmxl', 'idenitified needed library' );
 

@@ -1,12 +1,12 @@
 NAME
-    Alien::Gfsm - install the libgfsm C library on your system
+    Alien::GfsmXL - install the libgfsm C library on your system
 
 SYNOPSIS
        use 5.010;
        use strict;
-       use Alien::Gfsm;
+       use Alien::GfsmXL;
    
-       my $alien = Alien::Gfsm->new;
+       my $alien = Alien::GfsmXL->new;
        say $alien->libs;
        say $alien->cflags;
 

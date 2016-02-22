@@ -12,10 +12,10 @@ license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
-name: Alien-Gfsm
+name: Alien-GfsmXL
 provides:
-  Alien::Gfsm:
-    file: lib/Alien/Gfsm.pm
+  Alien::GfsmXL:
+    file: lib/Alien/GfsmXL.pm
     version: '0.001'
 requires:
   Alien::Base: '0.005'

@@ -1,4 +1,4 @@
-package Alien::Gfsm;
+package Alien::GfsmXL;
 use strict;
 use warnings;
 use parent 'Alien::Base';
@@ -12,21 +12,21 @@ __END__
 
 =head1 NAME
 
-Alien::Gfsm - install the libgfsm C library on your system
+Alien::GfsmXL - install the libgfsmxl C library on your system
 
 =head1 SYNOPSIS
 
    use 5.010;
    use strict;
-   use Alien::Gfsm;
+   use Alien::GfsmXL;
    
-   my $alien = Alien::Gfsm->new;
+   my $alien = Alien::GfsmXL->new;
    say $alien->libs;
    say $alien->cflags;
 
 =head1 DESCRIPTION
 
-Ensures that the libgfsm C library is installed on your system.
+Ensures that the libgfsmxl C library is installed on your system.
 
 =head1 AUTHOR
 
