@@ -1,5 +1,5 @@
 {
-   "abstract" : "install the libgfsm C library on your system",
+   "abstract" : "install the libgfsmxl C library on your system",
    "author" : [
       "Bryan Jurish <moocow@cpan.org>"
    ],
@@ -17,6 +17,7 @@
       "configure" : {
          "requires" : {
             "Alien::Base" : "0.001",
+            "Alien::Gfsm" : "0.001",
             "Module::Build" : "0.38"
          }
       },
@@ -31,7 +32,7 @@
    "provides" : {
       "Alien::GfsmXL" : {
          "file" : "lib/Alien/GfsmXL.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -40,5 +41,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

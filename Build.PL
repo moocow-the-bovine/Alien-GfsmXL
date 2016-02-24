@@ -17,6 +17,7 @@ my $builder = Alien::Base::ModuleBuild->new
    module_name => 'Alien::GfsmXL',
    license => 'perl',
    configure_requires => {
+			  'Alien::Gfsm'   => '0.001',
 			  'Alien::Base'   => '0.001',
 			  'Module::Build' => '0.38',
 			 },

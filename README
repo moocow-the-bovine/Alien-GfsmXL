@@ -1,5 +1,5 @@
 NAME
-    Alien::GfsmXL - install the libgfsm C library on your system
+    Alien::GfsmXL - install the libgfsmxl C library on your system
 
 SYNOPSIS
        use 5.010;
@@ -11,7 +11,7 @@ SYNOPSIS
        say $alien->cflags;
 
 DESCRIPTION
-    Ensures that the libgfsm C library is installed on your system.
+    Ensures that the libgfsmxl C library is installed on your system.
 
 AUTHOR
     Bryan Jurish <moocow@cpan.org>.
