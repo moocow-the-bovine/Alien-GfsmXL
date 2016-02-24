@@ -1,6 +1,7 @@
-##-*- Mode: Change-Log; coding: utf-8; -*-
-##
-## Change log for perl distribution Alien::GfsmXL
+Change log for perl distribution Alien::GfsmXL
+
+v0.002 Wed, 24 Feb 2016 14:27:38 +0100 moocow
+	* added Alien::Gfsm to Build.PL 'configure_requires'
 
 v0.001 Mon, 22 Feb 2016 13:29:45 +0100 moocow
-	+ initial version
+	* initial version
