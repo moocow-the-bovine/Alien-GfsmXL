@@ -17,8 +17,8 @@ my $builder = Alien::Base::ModuleBuild->new
    module_name => 'Alien::GfsmXL',
    license => 'perl',
    configure_requires => {
+			  'Alien::Base'   => '0.027',
 			  'Alien::Gfsm'   => '0.001',
-			  'Alien::Base'   => '0.001',
 			  'Module::Build' => '0.38',
 			 },
    test_requires => {
@@ -26,7 +26,8 @@ my $builder = Alien::Base::ModuleBuild->new
 		    },
    requires => {
 		'perl'        => '5.8.9',
-		'Alien::Base' => '0.005',
+		'Alien::Base' => '0.027',
+		'Gfsm'        => '0.0405',
 	       },
    dist_author => 'Bryan Jurish <moocow@cpan.org>',
    alien_name => 'gfsmxl',
@@ -36,7 +37,7 @@ my $builder = Alien::Base::ModuleBuild->new
 			location => '~moocow/mirror/projects/gfsm/',
 			pattern  => qr/^gfsmxl-([\d\.\-]+)\.tar\.gz$/,
 		       },
-   alien_env => \%env,
+   alien_env => \%env, ##-- requires Alien::Base >= v0.027
    alien_build_commands => [
 			    '%c --prefix=%s --enable-shared --enable-static --disable-doc',
 			    'make',
