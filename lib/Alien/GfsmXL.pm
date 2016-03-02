@@ -2,7 +2,7 @@ package Alien::GfsmXL;
 use strict;
 use warnings;
 use parent 'Alien::Base';
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 __END__
 

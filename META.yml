@@ -2,9 +2,11 @@
 abstract: 'install the libgfsmxl C library on your system'
 author:
   - 'Bryan Jurish <moocow@cpan.org>'
-build_requires: {}
+build_requires:
+  Test::More: '0'
+  Text::ParseWords: '0'
 configure_requires:
-  Alien::Base: '0.001'
+  Alien::Base::ModuleBuild: '0.027'
   Alien::Gfsm: '0.001'
   Module::Build: '0.38'
 dynamic_config: 1
@@ -17,11 +19,12 @@ name: Alien-GfsmXL
 provides:
   Alien::GfsmXL:
     file: lib/Alien/GfsmXL.pm
-    version: '0.002'
+    version: '0.004'
 requires:
-  Alien::Base: '0.005'
+  Alien::Base: '0.027'
   File::ShareDir: '1.00'
+  Gfsm: '0.0405'
   perl: v5.8.9
 resources:
   license: http://dev.perl.org/licenses/
-version: '0.002'
+version: '0.004'
