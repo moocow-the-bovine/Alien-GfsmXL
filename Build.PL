@@ -39,7 +39,7 @@ my $builder = Alien::Base::ModuleBuild->new
 			location => '~moocow/mirror/projects/gfsm/',
 			pattern  => qr/^gfsmxl-([\d\.\-]+)\.tar\.gz$/,
 		       },
-   alien_env => \%env, ##-- requires Alien::Base >= v0.027
+   alien_env => \%env, ##-- requires Alien::Base >= v0.027 (... but failing on freebsd test builds, 2018-01-22)
    alien_build_commands => [
 			    '%c --prefix=%s --enable-shared --enable-static --disable-doc',
 			    'make',
